@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Games</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid top-bar">
+        <div class="row">
+            <div class="col-1 back-sign">
+                <h1>&lt;</h1>
+            </div>
+            <div class="col-1">
+                <img src="images/ch4/logo.png" alt="" id="img-logo">
+            </div>
+            <div class="col-3 game-title">
+                <h1>ROCK PAPER SCISSORS</h1>
+            </div>
+            <div class="col-7"></div>
+        </div>
+    </div>
+    <div class="container-fluid text-player">
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-2">
+                <p>PLAYER 1</p>
+            </div>
+            <div class="col-2"></div>
+            <div class="col col-lg-2">
+                <p>COM</p>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-2">
+                <button><img src="images/ch4/batu.png" alt="" id="rock"></button>
+            </div>
+            <div class="col-2"></div>
+            <div class="col col-lg-2">
+                <button><img src="images/ch4/batu.png" alt="" id="rock-com"></button>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-2">
+                <button><img src="images/ch4/kertas.png" alt="" id="paper"></button>
+            </div>
+            <div class="col-2 text-vs">
+                <div class="vs">
+                    VS
+                </div>
+                <div id="result-game"></div>
+            </div>
+            <div class="col col-lg-2">
+                <button><img src="images/ch4/kertas.png" alt="" id="paper-com"></button>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-2">
+                <button><img src="images/ch4/gunting.png" alt="" id="scissors"></button>
+            </div>
+            <div class="col-2"></div>
+            <div class="col col-lg-2">
+                <button><img src="images/ch4/gunting.png" alt="" id="scissors-com"></button>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-md-center">
+        <div class="col col-lg-2">
+        </div>
+        <div class="col-2 refresh" id="refresh-btn">
+            <button class="selection"><img src="images/ch4/refresh.png" alt="" id="img-refresh"></button>
+        </div>
+        <div class="col col-lg-2">
+        </div>
+    </div>
+    <script src="js/rps.js" charset="utf-8"></script>
+</body>
+
+</html>

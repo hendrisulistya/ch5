@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <!-- Tabs Titles -->
+
+            <!-- Icon -->
+            <div class="fadeIn first">
+                <img src="images/ch4/logo.png" id="icon" alt="User Icon" style="width: 5rem;" />
+                <p>Rock Scissors Paper</p>
+            </div>
+
+            <!-- Login Form -->
+            <form method="POST" action="/login">
+                <input type="text" id="username" name="username" class="fadeIn second" placeholder="username">
+                <input type="text" id="password" name="password" class="fadeIn third" placeholder="password">
+                <input type="submit" class="fadeIn fourth" value="Log In">
+            </form>
+            <!-- Register-->
+            <div id="formFooter ">
+                <p>Don't have any account?</p>
+                <a class="underlineHover " href="/register ">Register</a>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
