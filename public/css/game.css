@@ -35,11 +35,6 @@ button {
     cursor: pointer;
 }
 
-button img {
-    width: 15rem;
-    height: 10rem;
-}
-
 .col p {
     font-size: 2vw;
 }
@@ -96,8 +91,9 @@ button img {
 }
 
 #img-refresh {
-    width: 7rem;
-    height: 7rem;
+    padding: 0;
+    max-width: 50%;
+    max-height: 50%;
 }
 
 #img-refresh:hover {

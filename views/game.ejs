@@ -6,15 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Games</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/game.css">
 </head>
 
 <body>
     <div class="container-fluid top-bar">
         <div class="row">
             <div class="col-1 back-sign">
-                <h1>&lt;</h1>
+                <a href="/" style="text-decoration: none; color: black;">
+                    <h1>&lt;</h1>
+                </a>
             </div>
             <div class="col-1">
                 <img src="images/ch4/logo.png" alt="" id="img-logo">
@@ -41,7 +43,7 @@
             </div>
             <div class="col-2"></div>
             <div class="col col-lg-2">
-                <button><img src="images/ch4/batu.png" alt="" id="rock-com"></button>
+                <img src="images/ch4/batu.png" alt="" id="rock-com">
             </div>
         </div>
         <div class="row justify-content-md-center">
@@ -52,10 +54,10 @@
                 <div class="vs">
                     VS
                 </div>
-                <div id="result-game"></div>
+                <div id="result-game">VS</div>
             </div>
             <div class="col col-lg-2">
-                <button><img src="images/ch4/kertas.png" alt="" id="paper-com"></button>
+                <img src="images/ch4/kertas.png" alt="" id="paper-com">
             </div>
         </div>
         <div class="row justify-content-md-center">
@@ -64,7 +66,7 @@
             </div>
             <div class="col-2"></div>
             <div class="col col-lg-2">
-                <button><img src="images/ch4/gunting.png" alt="" id="scissors-com"></button>
+                <img src="images/ch4/gunting.png" alt="" id="scissors-com">
             </div>
         </div>
     </div>
@@ -72,7 +74,7 @@
         <div class="col col-lg-2">
         </div>
         <div class="col-2 refresh" id="refresh-btn">
-            <button class="selection"><img src="images/ch4/refresh.png" alt="" id="img-refresh"></button>
+            <img src="images/ch4/refresh.png" alt="" id="img-refresh">
         </div>
         <div class="col col-lg-2">
         </div>

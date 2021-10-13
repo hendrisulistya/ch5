@@ -2,9 +2,10 @@ const fs = require('fs')
 const express = require('express')
 const router = express.Router()
 
-// let userdata = fs.readFileSync('./db/users.json');
-// let userdb = JSON.parse(userdata)
+
 let userdb = require('../db/users.json')
+
+
 console.log(userdb);
 
 let isLogin = false
@@ -28,9 +29,10 @@ router.post('/login', (req, res) => {
         password
     } = req.body
 
-    userdb.forEach((data, i) => {
-        if (username === data.username[i] && password === data.password[i]) {
+    userdb.forEach((data) => {
+        if (username == data.username && password == data.password) {
             isLogin = true
+            res.redirect('/game')
         }
     })
 
@@ -54,20 +56,17 @@ router.get('/register', (req, res) => {
 })
 
 router.post('/register', (req, res) => {
+    const users = []
     const {
         username,
         password
     } = req.body
 
-    const id = userdb.length === 0 ? 1 : userdb[userdb.length - 1].id
-
-    const user = {
-        id,
+    users.push({
         username,
         password
-    }
-    userdb.push(user)
-
+    })
+    res.redirect('/login')
 });
 
 module.exports = router
